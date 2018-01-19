@@ -1,0 +1,11 @@
+[out:json][timeout:250];
+(
+node(around:400,59.93823555,30.2668659740719)["amenity"="cafe"]->.cafes;
+node(around:400,59.93823555,30.2668659740719)["amenity"="bar"]->.bars;
+node(around:400,59.93823555,30.2668659740719)["public_transport"="stop_position"]->.stoppositions;
+
+
+node.cafes(if: cafes.count(nodes)>= 2 && bars.count(nodes) >= 1 && stoppositions.count(nodes) >= 1) -> .cfs;
+);
+make count total = cfs.count(nodes);
+out;
