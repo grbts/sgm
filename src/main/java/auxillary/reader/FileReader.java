@@ -1,4 +1,4 @@
-package auxillary.jsonhandler.reader;
+package auxillary.reader;
 import org.apache.commons.io.IOUtils;
 
 import java.io.*;

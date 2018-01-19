@@ -1,6 +1,6 @@
 package dto;
 
-import auxillary.jsonhandler.deserializer.InfrastructureCheckerDTODeserializer;
+import auxillary.deserializer.InfrastructureCheckerDTODeserializer;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import domain.Elements;
 

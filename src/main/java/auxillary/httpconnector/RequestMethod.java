@@ -1,4 +1,4 @@
-package auxillary.jsonhandler.httpconnector;
+package auxillary.httpconnector;
 
 public enum RequestMethod {
 

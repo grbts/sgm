@@ -1,4 +1,4 @@
-package auxillary.jsonhandler.server;
+package auxillary.server;
 
 import java.io.IOException;
 import java.net.Socket;

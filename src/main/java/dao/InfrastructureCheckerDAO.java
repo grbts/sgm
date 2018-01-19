@@ -1,9 +1,9 @@
 package dao;
 
-import auxillary.jsonhandler.server.Servers;
-import auxillary.jsonhandler.httpconnector.HTTPConnector;
-import auxillary.jsonhandler.httpconnector.RequestMethod;
-import auxillary.jsonhandler.reader.FileReader;
+import auxillary.server.Servers;
+import auxillary.httpconnector.HTTPConnector;
+import auxillary.httpconnector.RequestMethod;
+import auxillary.reader.FileReader;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dto.InfrastructureCheckerDTO;
 import org.apache.http.Header;
