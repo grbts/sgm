@@ -1,9 +1,9 @@
 package domain;
 
 public class Elements {
-    String type;
-    int id;
-    Tags tags;
+    private String type;
+    private int id;
+    private Tags tags;
 
     public Elements(String type, int id, Tags tags) {
         this.type = type;

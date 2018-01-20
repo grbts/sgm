@@ -7,7 +7,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Servers {
+public class ActiveServer {
 
 
     public static URI getActiveServer() throws URISyntaxException {
@@ -24,8 +24,8 @@ public class Servers {
         return server;
     }
 
-    private static boolean hostAvailabilityCheck(String address) {
-        try (Socket s = new Socket(address, 80)) {
+    private static boolean hostAvailabilityCheck(String host) {
+        try (Socket s = new Socket(host, 80)) {
             s.close();
             return true;
         } catch (IOException ex) {

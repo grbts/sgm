@@ -6,9 +6,9 @@ import domain.Elements;
 
 @JsonDeserialize(using = InfrastructureCheckerDTODeserializer.class)
 public class InfrastructureCheckerDTO {
-    Double version;
-    String generator;
-    Elements elements;
+    private Double version;
+    private String generator;
+    private Elements elements;
 
     public InfrastructureCheckerDTO(Double version, String generator, Elements elements) {
         this.version = version;

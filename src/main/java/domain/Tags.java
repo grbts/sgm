@@ -1,7 +1,7 @@
 package domain;
 
 public class Tags {
-    int total;
+    private int total;
 
     public Tags(int total) {
         this.total = total;

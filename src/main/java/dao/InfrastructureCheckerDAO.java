@@ -1,6 +1,6 @@
 package dao;
 
-import auxillary.server.Servers;
+import auxillary.server.ActiveServer;
 import auxillary.httpconnector.HTTPConnector;
 import auxillary.httpconnector.RequestMethod;
 import auxillary.reader.FileReader;
@@ -22,7 +22,7 @@ public class InfrastructureCheckerDAO {
         HTTPConnector httpConnector = new HTTPConnector();
         String responseBody = null;
         try {
-            responseBody = httpConnector.sendQuery(Servers.getActiveServer(),
+            responseBody = httpConnector.sendQuery(ActiveServer.getActiveServer(),
                     new Header[]{}, infrastructureInformationQuery, RequestMethod.POST);
         } catch (URISyntaxException e) {
             e.printStackTrace();
